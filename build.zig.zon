@@ -1,0 +1,15 @@
+.{
+    .name = "vsgifski",
+    .version = "1.0.0",
+    .paths = .{""},
+    .dependencies = .{
+        .vapoursynth = .{
+            .url = "git+https://github.com/dnjulek/vapoursynth-zig.git#79663ec823477973d7ff41c0d1089aca37783a0a",
+            .hash = "12203dee4f6d8386364e2346077728b3b57888422006440451e7898841dfd00967f4",
+        },
+        .gifski = .{
+            .url = "git+https://github.com/ImageOptim/gifski.git#38b799612f13f7faf92597077905f7b3d7745193",
+            .hash = "1220d0f0b991bafad05da0a062ad740e2d1b7d38090d6507f77873eda93a326d2204",
+        },
+    },
+}
