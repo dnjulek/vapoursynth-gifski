@@ -1,11 +1,13 @@
 .{
-    .name = "vsgifski",
+    .name = .vsgifski,
     .version = "1.0.0",
     .paths = .{""},
+    .fingerprint = 0xa9d3b2500b34d35f,
     .dependencies = .{
         .vapoursynth = .{
-            .url = "git+https://github.com/dnjulek/vapoursynth-zig.git#79663ec823477973d7ff41c0d1089aca37783a0a",
-            .hash = "12203dee4f6d8386364e2346077728b3b57888422006440451e7898841dfd00967f4",
+            // zig fetch --save git+https://github.com/dnjulek/vapoursynth-zig.git
+            .url = "git+https://github.com/dnjulek/vapoursynth-zig.git#62d081b5a40685ac51db0f6b4d0a8a3267ba9a43",
+            .hash = "vapoursynth-4.0.0-jLYMQ1nzAQA749SX-ttHLb1-lmQ9D4CohWCm2Ev7uGKt",
         },
         .gifski = .{
             .url = "git+https://github.com/ImageOptim/gifski.git#38b799612f13f7faf92597077905f7b3d7745193",
