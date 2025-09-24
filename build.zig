@@ -1,15 +1,26 @@
 const std = @import("std");
+const zon = @import("build.zig.zon");
 const os = @import("builtin").os.tag;
 
-pub fn build(b: *std.Build) void {
+pub fn build(b: *std.Build) !void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
-    const lib = b.addSharedLibrary(.{
-        .name = "vsgifski",
+    const mod = b.createModule(.{
         .root_source_file = b.path("src/vsgifski.zig"),
         .target = target,
         .optimize = optimize,
+    });
+
+    const options = b.addOptions();
+    const version = try std.SemanticVersion.parse(zon.version);
+    options.addOption(std.SemanticVersion, "version", version);
+    mod.addOptions("zon", options);
+
+    const lib = b.addLibrary(.{
+        .name = "vsgifski",
+        .linkage = .dynamic,
+        .root_module = mod,
     });
 
     const gifski_dep = b.dependency("gifski", .{});

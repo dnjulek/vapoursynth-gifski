@@ -26,7 +26,7 @@ gifski.Write(vnode clip[, string filename="output.gif", int quality=90, vnode al
 
 ## Building
 You'll need:
-- [zig-master](https://ziglang.org/download/)
+- [zig-0.15.1](https://ziglang.org/download/)
 - Rust (rust-gnu in windows)
 
 ``zig build -Doptimize=ReleaseFast``

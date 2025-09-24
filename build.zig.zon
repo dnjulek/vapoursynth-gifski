@@ -1,17 +1,17 @@
 .{
     .name = .vsgifski,
-    .version = "1.0.0",
+    .version = "2.0.0",
     .paths = .{""},
     .fingerprint = 0xa9d3b2500b34d35f,
     .dependencies = .{
         .vapoursynth = .{
             // zig fetch --save git+https://github.com/dnjulek/vapoursynth-zig.git
-            .url = "git+https://github.com/dnjulek/vapoursynth-zig.git#62d081b5a40685ac51db0f6b4d0a8a3267ba9a43",
-            .hash = "vapoursynth-4.0.0-jLYMQ1nzAQA749SX-ttHLb1-lmQ9D4CohWCm2Ev7uGKt",
+            .url = "git+https://github.com/dnjulek/vapoursynth-zig.git#a94152c87e4242a582ec5f30f4d4e890c14e2233",
+            .hash = "vapoursynth-4.0.0-jLYMQw95AgBWLJymsYybHIFxNu7d6shoYn8y8WZfH8T3",
         },
         .gifski = .{
-            .url = "git+https://github.com/ImageOptim/gifski.git#38b799612f13f7faf92597077905f7b3d7745193",
-            .hash = "1220d0f0b991bafad05da0a062ad740e2d1b7d38090d6507f77873eda93a326d2204",
+            .url = "git+https://github.com/ImageOptim/gifski.git#cab11b8b5bc5d8cb13e036da6918ff8de74a37f5",
+            .hash = "N-V-__8AAMCCBAD9mEvJ0dW56EAGXle5gVLoF-fgzG8uZREw",
         },
     },
 }
